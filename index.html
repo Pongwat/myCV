@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My CV</title>
+</head>
+<style>
+
+* {
+    box-sizing: border-box;
+}  
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+/*----------------------------------
+               topnav
+-----------------------------------*/
+.topnav {
+    display: flex;
+    
+}
+
+.topnav #myLinks {
+  display: none;
+}   
+
+.mycv {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------------------------
+               profile
+-----------------------------------*/
+.profile {
+    background-color: rgb(50, 50, 50);
+    color: rgb(200, 200, 200);
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    padding: 50px;
+}
+.profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;  
+    border: 10px #4ebbff solid; 
+    
+}
+
+.profile h1 {
+    
+    font-size: 30px;
+    margin: 10px;  
+}
+
+.skill {
+    line-height: 1.5;
+    
+}
+
+
+
+
+
+/*----------------------------------
+               content
+-----------------------------------*/
+.content {
+    
+    width: 100%;
+    
+}
+
+.content0 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 30px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(50, 50, 50);
+
+}
+
+.content0 p {
+    margin-left: 20px;
+    line-height: 1.5;
+    color: grey;
+}
+
+.content1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 30px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(50, 50, 50);
+    
+}
+
+.content1 p {
+    color: gray;
+    
+}
+
+.content2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 30px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(50, 50, 50);
+}
+
+.content2 p {
+    color: gray;
+    line-height: 1.5;
+    
+}
+
+.content3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 10px;
+    height: auto;
+    padding: 30px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(50, 50, 50);
+    
+}
+.all-certificate {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+.all-certificate p {
+    font-weight: bold;
+}
+.all-certificate i {
+    color: grey;
+    font-size: 14px;
+}
+
+
+
+.footer {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 10px 0 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .topnav-icon {display: none}
+    .mycv {
+        flex-direction: row;
+    }
+
+    .profile {
+        width: 40%;
+    }
+
+    .vl {
+        border-left: 6px solid #4ebbff;
+        height: 810px;
+        margin-top: -1px;
+        display: block;
+        width: 0px;
+        margin-left: auto;
+        margin-right: auto;
+       
+
+  
+  
+    }
+
+    .dot1 {
+        margin-top: 100px;
+        height: 25px;
+        width: 25px;
+        border: 5px solid #4ebbff;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+        
+    }
+    
+
+    .dot2 {
+        margin-top: -1px;
+        height: 25px;
+        width: 25px;
+        border: 5px solid #4ebbff;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+   
+
+   
+
+   
+   
+}
+</style>
+<body>
+<div>
+    <div class="topnav" id="myTopnav">
+        <div class="topnav-icon">
+            <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </div>
+        <div class="myLinks" id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div> 
+    
+    <div class="mycv">
+        <div class="profile">
+            <img src="images/img1.jpg" alt="mypicture" style="width:280px">
+            <h1 style="text-align: center;">Pongwat Saikaew</h1>
+            <br>
+            <br>
+            <div class="job-icon">
+                <i style="float:left; color: #4ebbff;" class="fa-solid fa-school"></i>
+                <p style="text-align: center;">Studying a General English Course</p>
+            </div>
+            
+            <div class="house-icon">
+                <i style="float:left; color: #4ebbff;" class="fa-solid fa-house"></i>
+                <p style="text-align: center;">Auckland, New zealand</p>
+            </div>
+            
+            <div class="email">
+                <i style="float:left; color: #4ebbff;" class="fa-solid fa-envelope"></i>
+                <p style="text-align: center;">man-zero@hotmail.com</p>
+            </div>
+           
+            <div class="mobile">
+                <i style="float:left; color: #4ebbff;" class="fa-solid fa-mobile-screen-button"></i>
+                <p style="text-align: center;">0211406931</p>
+            </div>
+            <br>
+            <br>
+            
+            
+
+            <div class="skill">
+
+                
+                <h2 style="text-align: center;">Skill</h2>
+                
+                <div class="leader">
+                    <i style="float:left;  color: #4ebbff;" class="fa-solid fa-user-tie">&nbsp;&nbsp;</i>
+                    <p ><b>leader</b></p>
+                    <p style="margin-left: 25px;">&diams; &nbsp;Listen to and support the team's ideas so they can be formulated into strategies.</p>
+                </div>
+               
+                <div class="team">
+                    <i style="float:left; color: #4ebbff;" class="fa-solid fa-people-group">&nbsp;&nbsp;</i>
+                    <p ><b>Teamwork</b></p>
+                    <p style="margin-left: 25px;  ">&diams; &nbsp;Coordinate with government organizations that are responsible for preventing and suppressing drugs.</p>
+                </div>
+              
+               
+                <div class="learning">
+                    <i style="float:left; color: #4ebbff;" class="fa-solid fa-book-open-reader">&nbsp;&nbsp;</i>
+                    <p><b>Willingness to learn</b></p>
+                    <p style="margin-left: 25px; ">&diams; &nbsp;Learn new skills in logistics, supply chain, and website development.</p>
+                </div>
+        
+               
+                <div class="Flexibility">
+                    <i style="float:left; color: #4ebbff;" class="fa-solid fa-shuffle">&nbsp;&nbsp;</i>
+                    <p><b>Flexibility</b></p>
+                    <p style="margin-left: 25px;">&diams; &nbsp;Adjust methods for resolving problems and conflicts to quickly achieve shared goals.</p>
+                </div>
+                
+               
+                <div class="code-html">
+                    <i style="float:left; color: #4ebbff;" class="fa-solid fa-code">&nbsp;&nbsp;</i>
+                    <p><b>HTML</b></p>
+                    <p style="margin-left: 25px; margin-top: 5px;">&diams; &nbsp;Create a form and connect it to the database.</p>
+                </div>
+        
+                <div class="code-CSS">
+                    <i style="float:left; color: #4ebbff;" class="fa-solid fa-code">&nbsp;&nbsp;</i>
+                    <p><b>CSS</b></p>
+                    <p style="margin-left: 25px; margin-top: 5px;">&diams; &nbsp;Create a responsive CV using CSS.</p>
+                </div>
+                <br>
+                
+                
+
+                
+            </div> 
+            
+            <div class="gallery">
+                <h2 style="text-align: center;">Gallery</h2>
+                <br>
+                <a style="display: flex; justify-content: center;" href="#"><i style="color: #4ebbff;;" class="fa-solid fa-image fa-2xl"></i></a>
+                
+            </div>
+            <span class="dot1"></span> 
+            <div class="vl"></div> 
+            <span class="dot2"></span>  
+            
+        </div>
+        
+        
+
+        
+        
+
+
+        <div class="content">
+            <div class="content0">
+                <i style="float: left;margin-top: 20px; color: #4ebbff;" class="fa-solid fa-bullseye fa-2xl">&nbsp;</i>
+                <h1 style="margin-top: 5px;">Personal Statement</h1>
+                <p>Public sector executive with experience in managing under pressure, teamwork, 
+                    and flexibility to adapt to the organization's policies and KPIs. Always eager 
+                    to learn new innovations. I most recently completed an online degree in web development,
+                     logistics, and supply chain. I am looking to apply my knowledge to logistics and supply chain management. 
+                     I am currently studying general English from 8.30 a.m. - 1.30 p.m. I am looking for a part-time job 
+                     in logistics and supply chain to be a part of the team to achieve the goals.</p>
+
+            </div>
+            <div class="content1">
+                
+                <i style="float: left;margin-top: 20px; color: #4ebbff;" class="fa-solid fa-briefcase fa-2xl">&nbsp;</i>
+                <h1 style="margin-top: 5px;">Work Experience</h1>
+                
+                <h3>Assistant Chief District Officer</h3>
+                <p style="margin-left: 15px;">Department of Provincial Administration,</p>
+                <i style="float: left;margin-left: 15px; line-height: 1px; " class="fa-solid fa-calendar-days">&nbsp;</i>
+                <p style="margin-top: 5px; line-height: 1px;">Feb 2019 - Mar 2023</p>
+                
+                <p style="margin-left: 35px; ">&diams; Lead the team in investigating and apprehending drug offenders. </p>
+                <p style="margin-left: 35px; ">&diams; Investigate persons without nationality in order to issue identification cards for persons without registration status. </p>
+                <p style="margin-left: 35px; ">&diams; Mediate disputes regarding land encroachment so that both sides can come to an agreement without legal action. </p>
+                <p style="margin-left: 35px; ">&diams; Organize elections from the local level to the national level. </p>
+                <br>    
+                  
+                
+                <h3>Land Officer</h3>
+                <p style="margin-left: 15px;">Department of Lands, Thailand</p>
+                <i style="float: left;margin-left: 15px; line-height: 1px;" class="fa-solid fa-calendar-days">&nbsp;</i>
+                <p style="margin-top: 5px; line-height: 1px;">Nov 2017 - Jun 2018</p>
+                
+                <p style="margin-left: 35px; ">&diams; Proceed with the registration of real estate transactions. </p>
+                <p style="margin-left: 35px; ">&diams; Verify land ownership according to drug laws and money laundering laws. </p>
+                <p style="margin-left: 35px; ">&diams; Investigate and process land title deeds. </p>
+                <br>
+                 
+                
+                <h3>Policy and Planning Analyst </h3> 
+                <p style="margin-left: 15px;">Department of Cooperative Promotion, Thailand</p>
+                <i style="float: left;margin-left: 15px; line-height: 1px; " class="fa-solid fa-calendar-days">&nbsp;</i>
+                <p style="margin-top: 5px; line-height: 1px;" >Jun 2015 - Feb 2016</p> 
+               
+                <p style="margin-left: 35px; ">&diams; Convert long-term plans into action plans. </p>
+                <p style="margin-left: 35px; ">&diams; Control various work groups to follow the action plan. </p>
+                <br>
+                
+                
+                <h3>Fund officer</h3>
+                <p style="margin-left: 15px;">Office of the Narcotics Control Board, Thailand</p>
+                <i style="float: left;margin-left: 15px; line-height: 1px;" class="fa-solid fa-calendar-days">&nbsp;</i>
+                <p style="margin-top: 5px; line-height: 1px;">Sep 2014 - Jan 2015</p>   
+                
+                <p style="margin-left: 35px; ">&diams; Inspect the assets of drug offenders. </p>
+                <p style="margin-left: 35px;">&diams; Seize and freeze the assets of drug offenders for auction. </p> 
+                <br>    
+                
+
+            </div>
+            <div class="content2">
+                <i style="float:left;margin-top: 20px; color: #4ebbff;" class="fa-solid fa-user-graduate fa-2xl">&nbsp;</i>
+                <h1 style="margin-top: 5px;">Education</h1>
+                
+                <h3 >Master of Public Administration, Major Management for Executives</h3>
+                <p style="margin-left: 20px; margin-top: 5px; ">
+                <i style="float: left;" class="fa-solid fa-calendar-days">&nbsp;</i>
+                Jan 2020 - Aug 2022<br>
+                National Institute of Development Administration, Thailand</p>
+
+                
+                
+                <h3 >Bachelor's degree in political science</h3>
+                <p style="margin-left: 20px; margin-top: 5px;">
+                <i style="float: left;" class="fa-solid fa-calendar-days">&nbsp;</i>
+                Jun 2008 - May 2013<br>
+                Ramkhamhaeng University, Thailand</p>
+
+            </div>
+            <div class="content3">
+                <i style="float:left;margin-top: 20px; color: #4ebbff;" class="fa-solid fa-award fa-2xl">&nbsp;</i>
+                <h1 style="margin-top: 5px;">Certificate</h1>
+    
+                <div class="all-certificate">
+                <div class="certificate">
+
+                        <h2><i class="fa-solid fa-warehouse">&nbsp; &nbsp;</i>logistics and supply chain</h2>
+                        
+                        <p>&diams; &nbsp;Forklift Operator's Certificate<br>
+                        <i>&nbsp; &nbsp; &nbsp;DT Driver Training (Jun 2024)</i></p>
+
+                        <p>&diams; &nbsp;Supply Chain Analytics<br>
+                        <i>&nbsp; &nbsp; &nbsp;Rutgers the State University (Apr 2024)</i></p>
+
+                        <p>&diams; &nbsp;Multimodal Transport<br>
+                        <i>&nbsp; &nbsp; &nbsp;Coventry University (Feb 2024)</i></p>
+
+                        <p>&diams; &nbsp;International Logistics<br>
+                        <i>&nbsp; &nbsp; &nbsp;Coventry University (Jan 2024)</i></p>
+
+                        <p>&diams; &nbsp;Supply Chain Principles<br>
+                        <i>&nbsp; &nbsp; &nbsp;Georgia Institute of Technology (Jul 2023)</i></p>
+
+                        <p>&diams; &nbsp;Supply Chain Logistics<br>
+                        <i>&nbsp; &nbsp; &nbsp;Rutgers the State University of New Jersey (Jun 2023)</i></p>
+                        <hr>
+                    </div>
+                    
+                   
+                  
+                    <div  class="certificate-it">
+                        <h2><i class="fa-solid fa-laptop-code">&nbsp; &nbsp;</i>information technology</h2>
+
+                        <p>&diams; &nbsp;HTML and CSS: Building a Single-Page Website<br>
+                        <i>&nbsp; &nbsp; &nbsp;Coursera Project Network (Apr 2024)</i></p>
+
+                        <p>&diams; &nbsp;HTML, CSS, and Javascript for Web Developers<br>
+                        <i>&nbsp; &nbsp; &nbsp;Johns Hopkins University (Apr 2024)</i></p>
+
+                        <p>&diams; &nbsp;Excel Fundamentals for Data Analysis<br>
+                        <i>&nbsp; &nbsp; &nbsp;Macquarie University (Apr 2024)</i></p>
+
+                        <p>&diams; &nbsp;The Data Scientist’s Toolbox<br>
+                        <i>&nbsp; &nbsp; &nbsp;Johns Hopkins University (Mar 2024)</i></p>
+
+                        <p>&diams; &nbsp;Excel Skills for Business: Essentials<br>
+                        <i>&nbsp; &nbsp; &nbsp;Macquarie University (Feb 2024)</i></p>
+
+                        <p>&diams; &nbsp;Databases and SQL for Data Science with Python<br>
+                        <i>&nbsp; &nbsp; &nbsp;IBM (Feb 2024)</i></p>
+                     
+                    
+                      
+                        <p>&diams; &nbsp;Programming Foundations with JavaScript, HTML and CSS<br>
+                        <i>&nbsp; &nbsp; &nbsp;Duke University (Jul 2023)</i></p>
+                        
+                        <p>&diams; &nbsp;Software Development Processes and Methodologies<br>
+                        <i>&nbsp; &nbsp; &nbsp;University of Minnesota (Jun 2023)</i></p>
+                        
+                        <p>&diams; &nbsp;Introduction to Front-End Development<br>
+                        <i>&nbsp; &nbsp; &nbsp;Meta (Jun 2023)</i></p>
+                       
+                        <p>&diams; &nbsp;Office Cleaning Rapid (Introduction to Cleaning)<br>
+                        <i>&nbsp; &nbsp; &nbsp;Building Service Contractors Association of Australia (Jun 2023)</i></p>
+                        
+                       
+                        <p>&diams; &nbsp;Introduction to Web Development<br>
+                        <i>&nbsp; &nbsp; &nbsp;University of California, Davis (May 2023)</i></p>
+                        
+                        <p>&diams; &nbsp;Introduction to Python Programming<br>
+                        <i>&nbsp; &nbsp; &nbsp;University of Pennsylvania (May 2023)</i></p>
+
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Designed and developed by Pongwat</p>
+
+    </div>
+
+
+</div>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
+    
+</body>
+</html>
