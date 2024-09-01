@@ -106,20 +106,37 @@ body {
 
 .gallery {
     display: block;
+    line-height: 1.5;
+    
+
     
 }
+
+.gallery a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    text-shadow: 5px 5px  rgb(29, 29, 29);
+    
+     
+    
+}
+
+
 
 .project {
     text-align: center;
+    line-height: 1.5;
     
     
     
 }
 
-.project:active {
+.project p:active {
     transform: translateY(4px);
 
 }
+
+
 
 .project a {
     background-color: rgb(200, 200, 200);
@@ -132,12 +149,31 @@ body {
 }
 
 .project a:active {
+    
     background-color: #4ebbff;
-    box-shadow: 0 5px rgb(29, 29, 29);
+    box-shadow: 0 5px rgb(29, 29, 29); 
+}
+
+.languages {
+    line-height: 1.5;
+    text-align: center;
+
+}
+.languages p {
+    line-height: 0;
+    font-size: 20px;
+
+}
+
+.license {
+    line-height: 1.5;
+    text-align: center;
+}
+
+.license p {
     
-    
-    
-    
+    font-size: 20px;
+
 }
 
 
@@ -159,7 +195,7 @@ body {
     height: auto;
     margin: 10px 10px 10px 10px;
     padding: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     color: rgb(50, 50, 50);
 
 }
@@ -175,7 +211,7 @@ body {
     height: auto;
     margin: 10px 10px 10px 10px;
     padding: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     color: rgb(50, 50, 50);
     
 }
@@ -190,7 +226,7 @@ body {
     height: auto;
     margin: 10px 10px 10px 10px;
     padding: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     color: rgb(50, 50, 50);
 }
 
@@ -205,7 +241,7 @@ body {
     margin: 0 10px;
     height: auto;
     padding: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     color: rgb(50, 50, 50);
     
 }
@@ -245,20 +281,17 @@ body {
         width: 40%;
     }
 
+    /*
     .vl {
         border-left: 6px solid #4ebbff;
-        height: 500px;
+        height: 200px;
         margin-top: -1px;
         display: block;
         width: 0px;
         margin-left: auto;
         margin-right: auto;
-       
-
-  
-  
     }
-
+    
     .dot1 {
         margin-top: 100px;
         height: 25px;
@@ -267,10 +300,7 @@ body {
         border-radius: 50%;
         display: block;
         margin-left: auto;
-        margin-right: auto;
-        
-        
-        
+        margin-right: auto; 
     }
     
 
@@ -282,10 +312,9 @@ body {
         border-radius: 50%;
         display: block;
         margin-left: auto;
-        margin-right: auto;
-        
+        margin-right: auto; 
     }
-
+    */
    
 
    
@@ -339,14 +368,14 @@ body {
             </div>
             <br>
             <br>
-            <hr style="background-color:  rgb(200, 200, 200);">
+            
             
             
 
             <div class="skill">
 
                 
-                <h2 style="text-align: center;">Skill</h2>
+                <h2 style="text-align: center; background-color: #4ebbff; color: rgb(50, 50, 50);">Skill</h2>
                 
                 <div class="leader">
                     <i style="float:left;  color: #4ebbff;" class="fa-solid fa-user-tie">&nbsp;&nbsp;</i>
@@ -364,7 +393,7 @@ body {
                 <div class="learning">
                     <i style="float:left; color: #4ebbff;" class="fa-solid fa-book-open-reader">&nbsp;&nbsp;</i>
                     <p><b>Willingness to learn</b></p>
-                    <p style="margin-left: 25px; ">&diams; &nbsp;Learn new skills in logistics, supply chain, and website development.</p>
+                    <p style="margin-left: 25px; ">&diams; &nbsp;Learn new skills in logistics, supply chain, and web development through online platforms.</p>
                 </div>
         
                
@@ -378,16 +407,16 @@ body {
                 <div class="code-html">
                     <i style="float:left; color: #4ebbff;" class="fa-solid fa-code">&nbsp;&nbsp;</i>
                     <p><b>HTML</b></p>
-                    <p style="margin-left: 25px; margin-top: 5px;">&diams; &nbsp;Create a form and connect it to the database.</p>
+                    <p style="margin-left: 25px; margin-top: 5px;">&diams; &nbsp;Create a basic website using HTML.</p>
                 </div>
         
                 <div class="code-CSS">
                     <i style="float:left; color: #4ebbff;" class="fa-solid fa-code">&nbsp;&nbsp;</i>
                     <p><b>CSS</b></p>
-                    <p style="margin-left: 25px; margin-top: 5px;">&diams; &nbsp;Create a responsive CV using CSS.</p>
+                    <p style="margin-left: 25px; margin-top: 5px;">&diams; &nbsp;Design your website to be responsive across devices such as desktops, tablets, and phones.</p>
                 </div>
                 <br>
-                <hr style="background-color:  rgb(200, 200, 200);">
+                
                 
                 
 
@@ -395,16 +424,35 @@ body {
             </div> 
             
             <div class="gallery">
-                <h2 style="text-align: center;">Gallery</h2>
+                <h2 style="text-align: center; background-color: #4ebbff; color: rgb(50, 50, 50);">Gallery</h2>
                 <br>
-                <a style="display: flex; justify-content: center;" href="#"><i style="color: #4ebbff;;" class="fa-solid fa-image fa-2xl"></i></a>
+                <a style="display: flex; justify-content: center;" href="gallery.html" target="_blank"><i  class="fa-solid fa-image fa-2xl"></i></a>
             </div>
             <br>
             <br>
-            <hr style="background-color:  rgb(200, 200, 200);">
+            
             <br>
+            <!--
             <div class="project">
-                <a style="text-decoration: none; color: rgb(50, 50, 50);" href="https://www.linkedin.com/in/pongwat-saikaew-41283a255/">linkedin</a></p>
+                <h2 style="text-align: center; background-color: #4ebbff; color: rgb(50, 50, 50);">Project</h2>
+                <p><a style="text-decoration: none; color: rgb(50, 50, 50);" href="https://www.linkedin.com/in/pongwat-saikaew-41283a255/">linkedin</a></p><br>
+                <p><a style="text-decoration: none; color: rgb(50, 50, 50);" href="https://www.linkedin.com/in/pongwat-saikaew-41283a255/">linkedin</a></p>
+            </div>
+            -->
+            
+            
+            <br>
+
+            <div class="languages">
+                <h2 style="text-align: center; background-color: #4ebbff; color: rgb(50, 50, 50);">languages</h2>
+                <p>Thai</p><br>
+                <p>English</p>
+            </div>
+
+            <br>
+            <div class="license">
+                <h2 style="text-align: center; background-color: #4ebbff; color: rgb(50, 50, 50);">Car driver's license</h2>
+                <p>Thailand private car driving license</p>
             </div>
             
 
@@ -424,12 +472,10 @@ body {
             <div class="content0">
                 <i style="float: left;margin-top: 20px; color: #4ebbff;" class="fa-solid fa-bullseye fa-2xl">&nbsp;</i>
                 <h2 style="margin-top: 5px;">Personal Statement</h2>
-                <p>Public sector executive with experience in managing under pressure, teamwork, 
-                    and flexibility to adapt to the organization's policies and KPIs. Always eager 
-                    to learn new innovations. I most recently completed an online degree in web development,
-                     logistics, and supply chain. I am looking to apply my knowledge to logistics and supply chain management. 
-                     I am currently studying general English from 8.30 a.m. - 1.30 p.m. I am looking for a part-time job 
-                     in logistics and supply chain to be a part of the team to achieve the goals.</p>
+                <p>Public sector executive with experience in managing under pressure, teamwork, and flexibility 
+                    to adapt to corporate policies and KPIs. Looking for new experiences and always spending free time 
+                    learning new innovations, be it in technology, logistics, supply chain, or construction. I am looking for 
+                    a part-time job to use my knowledge and experience to develop the organization to achieve its goals.</p>
 
             </div>
             <div class="content1">
@@ -502,12 +548,15 @@ body {
             </div>
             <div class="content3">
                 <i style="float:left;margin-top: 20px; color: #4ebbff;" class="fa-solid fa-award fa-2xl">&nbsp;</i>
-                <h2 style="margin-top: 5px;">Certificate</h2>
+                <h2 style="margin-top: 5px;">Online Certificate</h2>
     
                 <div class="all-certificate">
                 <div class="certificate">
 
                         <h2><i class="fa-solid fa-warehouse">&nbsp; &nbsp;</i>logistics and supply chain</h2>
+
+                        <p>&diams; &nbsp;Warehouse Management: Principles, Trends and Processes<br>
+                        <i>&nbsp; &nbsp; &nbsp;Alison (August 2024)</i></p>
                         
                         <p><span style="color: black;">&diams;</span> &nbsp;Forklift Operator's Certificate<br>
                         <i>&nbsp; &nbsp; &nbsp;DT Driver Training (Jun 2024)</i></p>
@@ -526,8 +575,17 @@ body {
 
                         <p>&diams; &nbsp;Supply Chain Logistics<br>
                         <i>&nbsp; &nbsp; &nbsp;Rutgers the State University of New Jersey (Jun 2023)</i></p>
-                        <hr>
+                   
+                        <br>
+                        <h2><i class="fa-solid fa-helmet-safety">&nbsp; &nbsp;</i>Safety and hygiene</h2>
+
+                        <p>&diams; &nbsp;Office Cleaning Rapid (Introduction to Cleaning)<br>
+                        <i>&nbsp; &nbsp; &nbsp;Building Service Contractors Association of Australia (Jun 2023)</i></p>
+                        
                     </div>
+                    <br>
+
+                    
                     
                    
                   
@@ -562,9 +620,6 @@ body {
                         
                         <p>&diams; &nbsp;Introduction to Front-End Development<br>
                         <i>&nbsp; &nbsp; &nbsp;Meta (Jun 2023)</i></p>
-                       
-                        <p>&diams; &nbsp;Office Cleaning Rapid (Introduction to Cleaning)<br>
-                        <i>&nbsp; &nbsp; &nbsp;Building Service Contractors Association of Australia (Jun 2023)</i></p>
                         
                        
                         <p>&diams; &nbsp;Introduction to Web Development<br>
